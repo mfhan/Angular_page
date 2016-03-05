@@ -85,6 +85,17 @@ router.post('/:resource', function(req, res, next) {
 				return;
 			}
 
+			var sendgrid  = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
+			sendgrid.send({
+	 				to:       'mf212mf@gmail.com',
+	 				from:     'mf212mf@gmail.com',
+	 				subject:  'New User Registration',
+	  			text:     'You have a new user!'
+			}, function(err, json) {
+	  			if (err) { return console.error(err); }
+	  			console.log(json);
+			});
+
 			var data = {
 				confirmation: 'success',
 				profile: profile.summary()
