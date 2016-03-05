@@ -24,14 +24,20 @@ accountCtr.controller('AccountController', ['$scope', 'RestService', function($s
 		console.log('UPDATE: '+JSON.stringify($scope.profile));
 
 
+		RestService.put({resource:'profile', id:$scope.profile.id}, $scope.profile, function(response){
+			console.log(JSON.stringify(response));
+		});
+	}
+
+
+	$scope.bio = function(){
+		console.log('UPDATE: '+JSON.stringify($scope.profile));
+
 
 		RestService.put({resource:'profile', id:$scope.profile.id}, $scope.profile, function(response){
 			console.log(JSON.stringify(response));
-
 		});
-
 	}
-
 
 
 }]);
