@@ -1,6 +1,7 @@
 var modules = [
 	'IndexModule',
 	'AccountModule',
+  'MembersModule',
 	'RestServiceModule'
 ]
 
