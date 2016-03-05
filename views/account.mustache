@@ -16,8 +16,8 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><% profile.name %></h1>
+                    <div class="col-md-4">
+                        <h3 style = "margin-top:20px" ><% profile.name %></h3>
 
                         <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
 
@@ -28,8 +28,12 @@
                         <br />
 
                         <button ng-click="update()" class="btn btn-success">Update Profile</button>
+                    </div>
 
-
+                    <div class="col-md-4 col-md-offset-2">
+                        <h3 style = "margin-top:18px">TELL US MORE</h3>
+                        <textarea style = "width:90%" style="margin-top:16px" rows="7" >Please enter your biography
+                        </textarea>
                     </div>
                 </div>
             </div>
