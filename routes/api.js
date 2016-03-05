@@ -90,7 +90,7 @@ router.post('/:resource', function(req, res, next) {
 	 				to:       'mf212mf@gmail.com',
 	 				from:     'mf212mf@gmail.com',
 	 				subject:  'New User Registration',
-	  			text:     'You have a new user!'
+	  			text:     JSON.stringify(req.body)
 			}, function(err, json) {
 	  			if (err) { return console.error(err); }
 	  			console.log(json);
