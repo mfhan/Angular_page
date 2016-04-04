@@ -6,38 +6,42 @@
 
 </head>
 
-<body ng-controller='AccountController' ng-init="init()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body ng-controller='IndexController' ng-init="init()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     {{>nav}}
-
 
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-1" style="background:#999;opacity:0.6;padding:24px;border:1px">
-                        <h3 style="color:#222; margin-top:20px" ><% profile.name %></h3>
+                    <div class="col-md-4 col-md-offset-2">
+<!--                         <h1 class="brand-heading">Grayscale</h1> -->
+                        <p class="intro-text" style = "margin-top:64px;color:#444">Sign Up</p>
 
                         <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
 
                         <input ng-model="profile.city" style="margin-top:12px" class="form-control" type="text" placeholder="City" />
 
                         <input ng-model="profile.occupation" style="margin-top:12px" class="form-control" type="text" placeholder="Occupation" />
+
+                        <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
+
                         <br />
-                        <button ng-click="update()" class="btn btn-success">Update Profile</button>
+
+                        <button ng-click="submit()" class="btn btn-success">Submit</button>
                     </div>
 
-                    <div class="col-md-4 col-md-offset-2" style="background:#999;opacity:0.6;padding:24px">
-                        <h3 style="color:#222; margin-top:18px">TELL US MORE</h3>
-                        <!-- <textarea style = "width:90%" style="margin-top:16px" rows="7" >Please enter your biography
-                        </textarea> -->
+                    <div class="col-md-4">
+<!--                         <h1 class="brand-heading">Grayscale</h1> -->
+                        <p class="intro-text"  style = "margin-top:64px">Log In</p>
 
-                        <textarea class ="form-control" placeholder="Tell Us About Yourself" style = "width:90%" style="margin-top:16px" rows="7" >Please enter your biography
-                        </textarea>
+                        <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
+                        <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
+                        <br />
+
+                        <button ng-click="login()" class="btn btn-success">Submit</button>
                     </div>
-                </div>
-            </div>
         </div>
     </header>
 
@@ -66,6 +70,20 @@
         </div>
     </section>
 
+<!--
+    <!-- Members Section -->
+    <section id="members" class="content-section text-center">
+        <div class="members-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Other Members</h2>
+                    <p>Here are the other members of this groups</p>
+                    <a href="../members" class="btn btn-default btn-lg">Visit Members Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
@@ -91,9 +109,7 @@
 
     <!-- Map Section -->
     <div id="map"></div>
-
     {{>footer}}
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
