@@ -13,91 +13,87 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-            <div class="container">
+            <h2 style = "color:#444">Sign Up for Premium Services<br>
+                Coming soon!</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <p class="intro-text" style = "margin-top:64px;color:#444">Sign Up</p>
+
+                            <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
+
+                            <input ng-model="profile.city" style="margin-top:12px" class="form-control" type="text" placeholder="City" />
+
+                            <input ng-model="profile.occupation" style="margin-top:12px" class="form-control" type="text" placeholder="Occupation" />
+
+                            <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
+
+                            <br />
+
+                            <button ng-click="submit()" style="background-color:#1ABC9C" class="btn btn-success">Submit</button>
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <p class="intro-text"  style = "margin-top:64px">Log In</p>
+
+                            <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
+                            <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
+                            <br />
+
+                            <button ng-click="login()" style="background-color:#1ABC9C"  class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </header>
+            <section id="about" class="container content-section text-center">
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-2">
-<!--                         <h1 class="brand-heading">Grayscale</h1> -->
-                        <p class="intro-text" style = "margin-top:64px;color:#444">Sign Up</p>
-
-                        <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
-
-                        <input ng-model="profile.city" style="margin-top:12px" class="form-control" type="text" placeholder="City" />
-
-                        <input ng-model="profile.occupation" style="margin-top:12px" class="form-control" type="text" placeholder="Occupation" />
-
-                        <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
-
-                        <br />
-
-                        <button ng-click="submit()" class="btn btn-success">Submit</button>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>About Marie-France</h2>
+                        <p>Marie-France is an intrepid reporter and editor, who even <a href="https://mfhan.wordpress.com/">has a blog</a>. She has experience working in online media, having managed the Business section of the FoxNews.com website in the early 2000's. </p>
+                        <p>A few months ago, she decided to learn coding full-time and started to study Ruby, JavaScript, Node, Angular and React. Her <a href="https://github.com/mfhan?tab=repositories">GitHub page</a> is modest but shows that she wants to build real working apps and pages.</p>
                     </div>
-
-                    <div class="col-md-4">
-<!--                         <h1 class="brand-heading">Grayscale</h1> -->
-                        <p class="intro-text"  style = "margin-top:64px">Log In</p>
-
-                        <input ng-model="profile.name" class="form-control" type="text" placeholder="Name" />
-                        <input ng-model="profile.password" style="margin-top:12px" class="form-control" type="password" placeholder="Password" />
-                        <br />
-
-                        <button ng-click="login()" class="btn btn-success">Submit</button>
-                    </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Marie-France</h2>
-                <p>Marie-France is an intrepid reporter and editor, who even <a href="https://mfhan.wordpress.com/">has a blog</a>. She has experience working in online media, having managed the Business section of the FoxNews.com website in the early 2000's. </p>
-                <p>A few months ago, she decided to learn coding full-time and started to study Ruby, JavaScript, Node, Angular and React. Her <a href="https://github.com/mfhan?tab=repositories">GitHub page</a> is modest but shows that she wants to build real working apps and pages.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Members Section -->
-    <section id="members" class="content-section text-center">
-        <div class="members-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2" >
-                   <ul>
-                        <li><a href="https://github.com/mf han?tab=repositories" style="color:#e60073" target="_blank">My GitHub Repo</a></li>
-                        <li><a href="https://git.heroku.com/mf-landing-page.git" style="color:#e60073"  target="_blank">Work Sample: a landing page using Angular</a></li>
-                        <li><a href="https://mfhan.wordpress.com/" style="color:#e60073" target="_blank">My Blog</a></li>
-
-                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+
+
+    <!-- Samples Section -->
+            <section id="samples" class="content-section text-center">
+                <div class="samples-section">
+                    <div class="container" >
+                        <div class="col-lg-8 col-lg-offset-2" >
+                            <p style="font-size:20px" ><a href="https://github.com/mf han?tab=repositories" target="_blank">My GitHub Repo</p></li>
+                            <p><a href="https://mf-fetch.herokuapp.com/" style="font-size:20px"  target="_blank">Work Sample: FETCH, a delivery app with React/Node/Express</p></li>
+                            <p><a href="https://mfhan.wordpress.com/" style="font-size:20px"  target="_blank">My Blog</p></li>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Say Hi to Marie-France</h2>
-                <p>Feel free to email me to provide some feedback on our templates, give suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:mf212mf@gmail.com">feedback@mariefr.biz</a>
-                </p>
-                <ul class="list-inline banner-social-buttons" style="color:#e60073">
-                    <li>
-                        <a href="https://twitter.com/mariefny" style="color:#e60073" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mfhan" style="color:#e60073" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/mariefr" style="color:#e60073" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square"></i> <span class="network-name">LinkedIn</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <section id="contact" class="container content-section text-center">
+                <div class="row"  style="color:#ffffff">
+                    <div class="col-lg-8 col-lg-offset-2"  >
+                        <h2 style="color:#ffffff">Say Hi to Marie-France</h2>
+                        <p style="color:#ffffff">Feel free to email me to provide feedback, give suggestions, or to just say hello!</p>
+                        <p style="color:#ffffff"><a href="mailto:mf212mf@gmail.com">feedback@mariefr.biz</a>
+                        </p>
+                        <ul class="list-inline banner-social-buttons" style="color:#e60073">
+                            <li>
+                                <a href="https://twitter.com/mariefny" style="color:#e60073" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/mfhan" style="color:#e60073" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mariefr" style="color:#e60073" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square"></i> <span class="network-name">LinkedIn</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+        <div id="map"></div>
     {{>footer}}
 
     <!-- jQuery -->
